@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Influencer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+  <header class="bg-white shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div>
+        <h1 class="text-xl font-bold text-violet-700 md:text-2xl">Dashboard de Campañas</h1>
+        <p class="text-sm text-slate-500">Instagram · TikTok · YouTube</p>
+      </div>
+      <nav aria-label="Secciones del dashboard">
+        <ul class="flex flex-wrap gap-2 text-sm">
+          <li><a href="#kpis" class="block rounded-lg px-3 py-2 hover:bg-violet-50 hover:text-violet-700">KPIs</a></li>
+          <li><a href="#drivers" class="block rounded-lg px-3 py-2 hover:bg-violet-50 hover:text-violet-700">Drivers</a></li>
+          <li><a href="#detalle" class="block rounded-lg px-3 py-2 hover:bg-violet-50 hover:text-violet-700">Detalle</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6 space-y-8">
+    <section id="kpis" aria-labelledby="kpis-title">
+      <h2 id="kpis-title" class="mb-4 text-lg font-semibold">Indicadores clave</h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-500">Comisiones totales</h3>
+          <p class="mt-2 text-3xl font-bold text-slate-900 lg:text-4xl">6.960 €</p>
+          <p class="mt-1 text-sm text-slate-500">15 % sobre 46.400 € en ventas</p>
+          <p class="mt-4 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">Mejor plataforma: TikTok · 2.640 €</p>
+        </article>
+
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ingresos generados</h3>
+          <p class="mt-2 text-3xl font-bold text-slate-900 lg:text-4xl">46.400 €</p>
+          <p class="mt-1 text-sm text-slate-500">655 ventas en 3 plataformas</p>
+          <p class="mt-4 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">Top producto: A · 18.000 €</p>
+        </article>
+
+        <article class="rounded-xl bg-white p-5 shadow-xs sm:col-span-2 lg:col-span-1">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-500">ROI global</h3>
+          <p class="mt-2 text-3xl font-bold text-slate-900 lg:text-4xl">1,99×</p>
+          <p class="mt-1 text-sm text-slate-500">Comisión / coste en anuncios (3.500 €)</p>
+          <p class="mt-4 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">Mejor ROI: YouTube · 2,48×</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="drivers" aria-labelledby="drivers-title">
+      <h2 id="drivers-title" class="mb-4 text-lg font-semibold">Drivers de rendimiento</h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-base font-semibold text-slate-900">Tasa de conversión por plataforma</h3>
+          <p class="text-xs text-slate-500">Conversiones / alcance</p>
+          <ul class="mt-4 space-y-3">
+            <li>
+              <div class="flex justify-between text-sm"><span>Instagram</span><span class="font-semibold">0,26 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-[65%] rounded-full bg-violet-300"></div></div>
+            </li>
+            <li>
+              <div class="flex justify-between text-sm"><span>TikTok</span><span class="font-semibold">0,18 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-[45%] rounded-full bg-violet-300"></div></div>
+            </li>
+            <li>
+              <div class="flex justify-between text-sm"><span>YouTube</span><span class="font-semibold">0,40 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-full rounded-full bg-violet-600"></div></div>
+            </li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-600">YouTube convierte más del doble que TikTok.</p>
+        </article>
+
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-base font-semibold text-slate-900">Engagement rate por plataforma</h3>
+          <p class="text-xs text-slate-500">Interacciones / alcance</p>
+          <ul class="mt-4 space-y-3">
+            <li>
+              <div class="flex justify-between text-sm"><span>Instagram</span><span class="font-semibold">6,0 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-[92%] rounded-full bg-violet-300"></div></div>
+            </li>
+            <li>
+              <div class="flex justify-between text-sm"><span>TikTok</span><span class="font-semibold">6,5 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-full rounded-full bg-violet-600"></div></div>
+            </li>
+            <li>
+              <div class="flex justify-between text-sm"><span>YouTube</span><span class="font-semibold">4,5 %</span></div>
+              <div class="mt-1 h-2 w-full rounded-full bg-slate-100" aria-hidden="true"><div class="h-2 w-[69%] rounded-full bg-violet-300"></div></div>
+            </li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-600">TikTok genera más interacción, pero convierte menos.</p>
+        </article>
+
+        <article class="rounded-xl bg-white p-5 shadow-xs md:col-span-2 lg:col-span-1">
+          <h3 class="text-base font-semibold text-slate-900">Ingresos por producto</h3>
+          <p class="text-xs text-slate-500">Ventas × precio</p>
+          <ul class="mt-5 space-y-4" aria-label="Ingresos por producto">
+            <li>
+              <div class="mb-1 flex justify-between gap-3 text-sm"><span>Producto A · 50 €</span><span class="shrink-0 font-semibold">18.000 €</span></div>
+              <div class="h-3 overflow-hidden rounded-full bg-slate-100" aria-hidden="true"><div class="h-full w-full rounded-full bg-violet-600"></div></div>
+            </li>
+            <li>
+              <div class="mb-1 flex justify-between gap-3 text-sm"><span>Producto B · 120 €</span><span class="shrink-0 font-semibold">14.400 €</span></div>
+              <div class="h-3 overflow-hidden rounded-full bg-slate-100" aria-hidden="true"><div class="h-full w-[80%] rounded-full bg-violet-300"></div></div>
+            </li>
+            <li>
+              <div class="mb-1 flex justify-between gap-3 text-sm"><span>Producto C · 80 €</span><span class="shrink-0 font-semibold">14.000 €</span></div>
+              <div class="h-3 overflow-hidden rounded-full bg-slate-100" aria-hidden="true"><div class="h-full w-[78%] rounded-full bg-violet-300"></div></div>
+            </li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-600">A lidera por volumen; B tiene el mayor ticket.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="detalle" aria-labelledby="detalle-title">
+      <h2 id="detalle-title" class="mb-4 text-lg font-semibold">Detalle operativo</h2>
+      <div class="grid grid-cols-1 gap-6">
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-base font-semibold text-slate-900">Rendimiento por plataforma</h3>
+          <p class="text-xs text-slate-500">Ventas, costes y retorno de cada red social</p>
+          <ul class="mt-4 divide-y divide-slate-100 lg:hidden" aria-label="Rendimiento por plataforma">
+            <li class="py-4 first:pt-0">
+              <h4 class="font-semibold text-slate-900">Instagram</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Ventas</dt><dd>220</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>15.600 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>2.340 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>85.000</dd></div>
+                <div><dt class="text-slate-500">Coste</dt><dd>1.200 €</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,26 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>6,0 %</dd></div>
+                <div><dt class="text-slate-500">ROI</dt><dd>1,95×</dd></div>
+              </dl>
+            </li>
+            <li class="py-4">
+              <h4 class="font-semibold text-slate-900">TikTok</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Ventas</dt><dd>275</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>17.600 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>2.640 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>150.000</dd></div>
+                <div><dt class="text-slate-500">Coste</dt><dd>1.500 €</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,18 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd class="font-semibold text-emerald-700">6,5 %</dd></div>
+                <div><dt class="text-slate-500">ROI</dt><dd>1,76×</dd></div>
+              </dl>
+            </li>
+            <li class="py-4">
+              <h4 class="font-semibold text-slate-900">YouTube</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Ventas</dt><dd>160</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>13.200 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>1.980 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>40.000</dd></div>
+                <div><dt class="text-slate-500">Coste</dt><dd>800 €</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd class="font-semibold text-emerald-700">0,40 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>4,5 %</dd></div>
+                <div><dt class="text-slate-500">ROI</dt><dd class="font-semibold text-emerald-700">2,48×</dd></div>
+              </dl>
+            </li>
+            <li class="border-t border-slate-200 py-4 font-semibold">
+              <h4 class="text-slate-900">Total</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Ventas</dt><dd>655</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>46.400 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>6.960 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>275.000</dd></div>
+                <div><dt class="text-slate-500">Coste</dt><dd>3.500 €</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,24 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>6,1 %</dd></div>
+                <div><dt class="text-slate-500">ROI</dt><dd>1,99×</dd></div>
+              </dl>
+            </li>
+          </ul>
+          <div class="mt-4 hidden lg:block">
+            <table class="w-full text-sm">
+              <caption class="sr-only">Ventas, ingresos, comisión, alcance, coste, conversión, engagement y ROI por plataforma</caption>
+              <thead class="bg-slate-50 text-xs uppercase text-slate-500">
+                <tr>
+                  <th scope="col" class="px-3 py-2 text-left">Plataforma</th>
+                  <th scope="col" class="px-3 py-2 text-right">Ventas</th>
+                  <th scope="col" class="px-3 py-2 text-right">Ingresos</th>
+                  <th scope="col" class="px-3 py-2 text-right">Comisión</th>
+                  <th scope="col" class="px-3 py-2 text-right">Alcance</th>
+                  <th scope="col" class="px-3 py-2 text-right">Coste</th>
+                  <th scope="col" class="px-3 py-2 text-right">Conversión</th>
+                  <th scope="col" class="px-3 py-2 text-right">Engagement</th>
+                  <th scope="col" class="px-3 py-2 text-right">ROI</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">Instagram</th>
+                  <td class="px-3 py-2 text-right">220</td>
+                  <td class="px-3 py-2 text-right">15.600 €</td>
+                  <td class="px-3 py-2 text-right">2.340 €</td>
+                  <td class="px-3 py-2 text-right">85.000</td>
+                  <td class="px-3 py-2 text-right">1.200 €</td>
+                  <td class="px-3 py-2 text-right">0,26 %</td>
+                  <td class="px-3 py-2 text-right">6,0 %</td>
+                  <td class="px-3 py-2 text-right">1,95×</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">TikTok</th>
+                  <td class="px-3 py-2 text-right">275</td>
+                  <td class="px-3 py-2 text-right">17.600 €</td>
+                  <td class="px-3 py-2 text-right">2.640 €</td>
+                  <td class="px-3 py-2 text-right">150.000</td>
+                  <td class="px-3 py-2 text-right">1.500 €</td>
+                  <td class="px-3 py-2 text-right">0,18 %</td>
+                  <td class="px-3 py-2 text-right font-semibold text-emerald-700">6,5 %</td>
+                  <td class="px-3 py-2 text-right">1,76×</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">YouTube</th>
+                  <td class="px-3 py-2 text-right">160</td>
+                  <td class="px-3 py-2 text-right">13.200 €</td>
+                  <td class="px-3 py-2 text-right">1.980 €</td>
+                  <td class="px-3 py-2 text-right">40.000</td>
+                  <td class="px-3 py-2 text-right">800 €</td>
+                  <td class="px-3 py-2 text-right font-semibold text-emerald-700">0,40 %</td>
+                  <td class="px-3 py-2 text-right">4,5 %</td>
+                  <td class="px-3 py-2 text-right font-semibold text-emerald-700">2,48×</td>
+                </tr>
+              </tbody>
+              <tfoot class="border-t border-slate-200 font-semibold">
+                <tr>
+                  <th scope="row" class="px-3 py-2 text-left">Total</th>
+                  <td class="px-3 py-2 text-right">655</td>
+                  <td class="px-3 py-2 text-right">46.400 €</td>
+                  <td class="px-3 py-2 text-right">6.960 €</td>
+                  <td class="px-3 py-2 text-right">275.000</td>
+                  <td class="px-3 py-2 text-right">3.500 €</td>
+                  <td class="px-3 py-2 text-right">0,24 %</td>
+                  <td class="px-3 py-2 text-right">6,1 %</td>
+                  <td class="px-3 py-2 text-right">1,99×</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </article>
+
+        <article class="rounded-xl bg-white p-5 shadow-xs">
+          <h3 class="text-base font-semibold text-slate-900">Rendimiento por producto</h3>
+          <p class="text-xs text-slate-500">Comisión del 15 % por venta</p>
+          <ul class="mt-4 divide-y divide-slate-100 lg:hidden" aria-label="Rendimiento por producto">
+            <li class="py-4 first:pt-0">
+              <h4 class="font-semibold text-slate-900">Producto A</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Precio</dt><dd>50 €</dd></div>
+                <div><dt class="text-slate-500">Ventas</dt><dd>360</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>18.000 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>2.700 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>120.000</dd></div>
+                <div><dt class="text-slate-500">Interacciones</dt><dd>7.800</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd class="font-semibold text-emerald-700">0,30 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd class="font-semibold text-emerald-700">6,5 %</dd></div>
+              </dl>
+            </li>
+            <li class="py-4">
+              <h4 class="font-semibold text-slate-900">Producto B</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Precio</dt><dd>120 €</dd></div>
+                <div><dt class="text-slate-500">Ventas</dt><dd>120</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>14.400 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>2.160 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>70.000</dd></div>
+                <div><dt class="text-slate-500">Interacciones</dt><dd>3.500</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,17 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>5,0 %</dd></div>
+              </dl>
+            </li>
+            <li class="py-4">
+              <h4 class="font-semibold text-slate-900">Producto C</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Precio</dt><dd>80 €</dd></div>
+                <div><dt class="text-slate-500">Ventas</dt><dd>175</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>14.000 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>2.100 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>85.000</dd></div>
+                <div><dt class="text-slate-500">Interacciones</dt><dd>5.350</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,21 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>6,3 %</dd></div>
+              </dl>
+            </li>
+            <li class="border-t border-slate-200 py-4 font-semibold">
+              <h4 class="text-slate-900">Total</h4>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div><dt class="text-slate-500">Precio</dt><dd>—</dd></div>
+                <div><dt class="text-slate-500">Ventas</dt><dd>655</dd></div>
+                <div><dt class="text-slate-500">Ingresos</dt><dd>46.400 €</dd></div>
+                <div><dt class="text-slate-500">Comisión</dt><dd>6.960 €</dd></div>
+                <div><dt class="text-slate-500">Alcance</dt><dd>275.000</dd></div>
+                <div><dt class="text-slate-500">Interacciones</dt><dd>16.650</dd></div>
+                <div><dt class="text-slate-500">Conversión</dt><dd>0,24 %</dd></div>
+                <div><dt class="text-slate-500">Engagement</dt><dd>6,1 %</dd></div>
+              </dl>
+            </li>
+          </ul>
+          <div class="mt-4 hidden lg:block">
+            <table class="w-full text-sm">
+              <caption class="sr-only">Precio, ventas, ingresos, comisión, alcance, interacciones, conversión y engagement por producto</caption>
+              <thead class="bg-slate-50 text-xs uppercase text-slate-500">
+                <tr>
+                  <th scope="col" class="px-3 py-2 text-left">Producto</th>
+                  <th scope="col" class="px-3 py-2 text-right">Precio</th>
+                  <th scope="col" class="px-3 py-2 text-right">Ventas</th>
+                  <th scope="col" class="px-3 py-2 text-right">Ingresos</th>
+                  <th scope="col" class="px-3 py-2 text-right">Comisión</th>
+                  <th scope="col" class="px-3 py-2 text-right">Alcance</th>
+                  <th scope="col" class="px-3 py-2 text-right">Interacciones</th>
+                  <th scope="col" class="px-3 py-2 text-right">Conversión</th>
+                  <th scope="col" class="px-3 py-2 text-right">Engagement</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">Producto A</th>
+                  <td class="px-3 py-2 text-right">50 €</td>
+                  <td class="px-3 py-2 text-right">360</td>
+                  <td class="px-3 py-2 text-right">18.000 €</td>
+                  <td class="px-3 py-2 text-right">2.700 €</td>
+                  <td class="px-3 py-2 text-right">120.000</td>
+                  <td class="px-3 py-2 text-right">7.800</td>
+                  <td class="px-3 py-2 text-right font-semibold text-emerald-700">0,30 %</td>
+                  <td class="px-3 py-2 text-right font-semibold text-emerald-700">6,5 %</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">Producto B</th>
+                  <td class="px-3 py-2 text-right">120 €</td>
+                  <td class="px-3 py-2 text-right">120</td>
+                  <td class="px-3 py-2 text-right">14.400 €</td>
+                  <td class="px-3 py-2 text-right">2.160 €</td>
+                  <td class="px-3 py-2 text-right">70.000</td>
+                  <td class="px-3 py-2 text-right">3.500</td>
+                  <td class="px-3 py-2 text-right">0,17 %</td>
+                  <td class="px-3 py-2 text-right">5,0 %</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <th scope="row" class="px-3 py-2 text-left font-medium">Producto C</th>
+                  <td class="px-3 py-2 text-right">80 €</td>
+                  <td class="px-3 py-2 text-right">175</td>
+                  <td class="px-3 py-2 text-right">14.000 €</td>
+                  <td class="px-3 py-2 text-right">2.100 €</td>
+                  <td class="px-3 py-2 text-right">85.000</td>
+                  <td class="px-3 py-2 text-right">5.350</td>
+                  <td class="px-3 py-2 text-right">0,21 %</td>
+                  <td class="px-3 py-2 text-right">6,3 %</td>
+                </tr>
+              </tbody>
+              <tfoot class="border-t border-slate-200 font-semibold">
+                <tr>
+                  <th scope="row" class="px-3 py-2 text-left">Total</th>
+                  <td class="px-3 py-2 text-right">—</td>
+                  <td class="px-3 py-2 text-right">655</td>
+                  <td class="px-3 py-2 text-right">46.400 €</td>
+                  <td class="px-3 py-2 text-right">6.960 €</td>
+                  <td class="px-3 py-2 text-right">275.000</td>
+                  <td class="px-3 py-2 text-right">16.650</td>
+                  <td class="px-3 py-2 text-right">0,24 %</td>
+                  <td class="px-3 py-2 text-right">6,1 %</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
